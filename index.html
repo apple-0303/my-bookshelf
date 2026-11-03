@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="頁間書房：個人小說閱讀紀錄。" />
+    <title>頁間書房｜小說閱讀紀錄</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top"><i>✦</i>頁間書房</a>
+      <nav aria-label="主要導覽"><a href="#shelf">閱讀紀錄</a><a href="#about">關於本站</a></nav>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">A PRIVATE READING ARCHIVE</p>
+          <h1>收藏故事，<br /><em>也收藏讀完後的餘光。</em></h1>
+          <p>這裡記下我讀過的小說、想留下的句子，和一些仍在心裡慢慢發酵的閱讀感受。</p>
+          <a class="button" href="#shelf">走進書房 ↓</a>
+        </div>
+        <div class="sky" aria-hidden="true"><div class="orbit"></div><strong>READ<br />INTO<br />THE NIGHT</strong></div>
+      </section>
+      <section class="section" id="shelf">
+        <div class="section-head"><div><p class="eyebrow">READING RECORDS</p><h2>我的書櫃</h2><p>只收錄我想留下的故事。</p></div><span class="result" id="result-count"></span></div>
+        <div class="controls"><div class="filter-group" id="filters" aria-label="書籍篩選"></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="搜尋書名、作者、標籤" /></label></div>
+        <div class="book-grid" id="book-grid"></div>
+      </section>
+      <section class="about" id="about"><div><p class="eyebrow">ABOUT THIS SHELF</p><h2>不是書評，<br />是讀完以後想留下的記號。</h2></div><p>這座書房記錄我讀過、正在讀，或希望分享的小說。閱讀筆記由我提供方向、再由 AI 協助整理；作品介紹則保留可追溯的來源連結。</p></section>
+    </main>
+    <footer><span>頁間書房 · 個人小說閱讀紀錄</span><span>© 2026</span></footer>
+    <dialog id="book-dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+    <script src="data/books.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
